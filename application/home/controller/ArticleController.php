@@ -34,7 +34,7 @@ class ArticleController extends Controller{
          $display_page = $model->page($controller,$action,$goods['pages'],$page,'',$cid);
          $this->assign('display_page',$display_page);
         
-        return $this->fetch('',[
+        return $this->fetch('Article/index',[
             'goods'=>$goods['data'],
             'page'=>$page,
             'cid'=>$cid
@@ -46,7 +46,7 @@ class ArticleController extends Controller{
     //关于
     public function about(){
         $cid = 100000;
-        return $this->fetch('',[
+        return $this->fetch('Article/about',[
             'cid'=>$cid
         ]);    
     }
