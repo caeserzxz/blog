@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#x767B;&#x5F55; - 软经典</title>
+    <meta name="description" />
+    <meta name="keywords" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="__STATIC__/home/css/site.css" />
+    <link href="__STATIC__/home/css/iconfont.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <!-- 头部文件 -->
+    {include file="common/head"}
+
+
+
+
+    <div class="container body-content">
+        <h2 class="mt-4">登录</h2>
+        <form action="{:url('User/login')}" class="col-md-4 mt-4" method="post" style="padding:0;">
+            <div class="form-group">
+                <label for="UserName">&#x7528;&#x6237;&#x540D;</label>
+                <input autofocus="autofocus" class="form-control" data-val="true" data-val-length="&#x7528;&#x6237;&#x540D;&#x6700;&#x957F;12&#x4F4D;"
+                    data-val-length-max="12" data-val-required="&#x8BF7;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;" id="UserName"
+                    maxlength="12" name="UserName" type="text" value="" />
+                <span class="field-validation-valid text-danger validation-message" data-valmsg-for="UserName"
+                    data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label for="Password">&#x5BC6;&#x7801;</label>
+                <input class="form-control" data-val="true" data-val-length="&#x5BC6;&#x7801;&#x6700;&#x957F;16&#x4F4D;"
+                    data-val-length-max="16" data-val-required="&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;" id="Password"
+                    maxlength="16" name="Password" type="password" />
+                <span class="field-validation-valid text-danger validation-message" data-valmsg-for="Password"
+                    data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <input data-val="true" data-val-required="The &#x8BB0;&#x4F4F;&#x6211; field is required." id="RememberMe"
+                    name="RememberMe" type="checkbox" value="true" />
+                <label for="RememberMe">&#x8BB0;&#x4F4F;&#x6211;</label>
+            </div>
+            <p class="text-danger validation-message"></p>
+            <button class="btn btn-primary">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                登录
+            </button>
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8MT8YplnO69Osy-ATi9suh8BYvVs-sA4W3QrOKnr3x_t9t6CUYwLkpSF79uXUVQxMKiA4rucRKJLWSz4bNFRsqQri6P-WmHPokluGGwbvd3MQ6PCEOpLQHea8F4tQNl3k5lhSwH6KIt1iEdd4l-3lDo" /><input
+                name="RememberMe" type="hidden" value="false" />
+        </form>
+    </div>
+
+
+  <!-- 底部文件 -->
+  {include file="common/bottom"}
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<div class="jumbotron" id="paginationTarget">
+    <div class="container body-content animated slideInDown">
+        <h1 class="display-4">软经典</h1>
+        <br />
+        <p class="lead">
+        我不怕飞得不够高也不怕跩得痛<br /><br />
+        我只怕自己当个哈批哈批不敢做梦
+        </p>
+        {if condition="$user_info_login neq ''"}
+            <p class="lead">
+                <a class="btn btn-primary" href="{:url('Article/add_article')}">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    写文章
+                </a>
+            </p>
+        {/if}
+
+    </div>
+</div>

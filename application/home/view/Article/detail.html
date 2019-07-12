@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{$article.title} - 软经典</title>
+    <meta name="description" content="{$article.title}" />
+    <meta name="keywords" content="{$article.title}" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="__STATIC__/home/css/site.css" />
+    <link href="__STATIC__/home/css/iconfont.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" rel="stylesheet" />
+    <link href="/lib/highlight/styles/vs.css" rel="stylesheet" />
+    <style>
+        .div { background: red; }
+    </style>
+
+</head>
+
+<body>
+   <!-- 头部文件 -->
+   {include file="common/head"}
+
+    <div class="jumbotron">
+        <div class="container body-content animated fadeInLeft">
+            <h1 class="display-6 mb-4" style="overflow-wrap:break-word">{$article.title}</h1>
+            <p class="lead text-muted mb-1">
+                <i class="fa fa-calendar"></i>
+                {$article.add_time}
+            </p>
+            <p class="lead text-muted mb-4">
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                {$article.reading_volume}
+            </p>
+            {if condition="$user_info_login neq ''"}
+            <a class="btn btn-outline-primary" href="{:url('Article/edit_article')}?id={$article.id}">
+                <i class="fa fa-pencil"></i>
+                编辑
+            </a>
+            {/if}
+        </div>
+    </div>
+    
+    <div class="container body-content animated fadeIn">
+        <div class="markdown-body" style="padding-bottom:3rem">
+                {$article.content}
+        </div>
+    </div>
+  
+ <!-- 底部文件 -->
+ {include file="common/bottom"}
+</body>
+
+</html>
