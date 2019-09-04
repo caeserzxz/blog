@@ -46,7 +46,7 @@ class ArticleController extends Controller{
     //关于
     public function about(){
         $cid = 100000;
-        return $this->fetch('Article/about',[
+        return $this->fetch('article/about',[
             'cid'=>$cid
         ]);    
     }
