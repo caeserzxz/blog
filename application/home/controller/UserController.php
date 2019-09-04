@@ -44,4 +44,26 @@ class UserController extends Controller{
         }
        
     }
+
+     public function visit_zhouxuezhong_top(){
+        $a = [30736,29935,29935,30727,30090,30243,30550,30316,30318,30329,30330,30334,30337,30337,29958,30707,30580,30581
+,30250,30701,30724,30723,30158,30786,29898,29983,29892,29963,29958,29928,29899,29980,29897,29937,29941,29957,29946,29948,29983];
+        $bb = array_unique($a);
+
+          dump($bb);die;
+        // file_get_contents('http://www.baidu.com');
+        $ch = curl_init();  
+
+        curl_setopt($ch, CURLOPT_URL, "http://fuckgfw.zhouxuezhong.top");  
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true) ; // 获取数据返回    
+
+        curl_setopt($ch, CURLOPT_BINARYTRANSFER, true) ; // 在启用 CURLOPT_RETURNTRANSFER 时候将获取数据返回    
+
+        $data = curl_exec($ch);  
+
+        curl_close($ch);  
+
+        return $data;  
+    }
 }

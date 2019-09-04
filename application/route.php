@@ -23,12 +23,15 @@
 use think\Route;
 
 //默认网站首页
-Route::get('/','home/Article/index');
+//Route::get('/','home/Article/index');
 
-Route::get('home/Article/index','home/Article/index');
-Route::get('home/Article/about','home/Article/about');
-Route::get('home/Article/detail','home/Article/detail');
-Route::get('home/Article/search','home/Article/search');
-Route::rule('home/User/login','home/User/login');
-Route::rule('home/Article/add_article','home/Article/add_article');
-Route::rule('home/Article/edit_article','home/Article/edit_article');
+//Route::get('home/Article/index','home/Article/index');
+//Route::get('home/Article/about','home/Article/about');
+//Route::get('home/Article/detail','home/Article/detail');
+//Route::get('home/Article/search','home/Article/search');
+//Route::rule('home/User/login','home/User/login');
+//Route::rule('home/Article/add_article','home/Article/add_article');
+//Route::rule('home/Article/edit_article','home/Article/edit_article');
+//Route::rule('home/User/visit_zhouxuezhong_top','home/User/visit_zhouxuezhong_top');
+
+

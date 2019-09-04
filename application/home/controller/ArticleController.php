@@ -54,13 +54,15 @@ class ArticleController extends Controller{
 
     //详情
     public function detail(){
+        vendor('erusev.parsedown.Parsedown',VENDOR_PATH,'.class.php');
+        $parsedown = new \Parsedown();
         $id = input('get.id');
         $model = new Article();
         //更新用户阅读量
-         $model->save_reading_volume($id);
+        $model->save_reading_volume($id);
         //获取文章详情
         $data = $model->get_detail($id);
-       
+        $data['content'] = $parsedown->text($data['content']);
 
         return $this->fetch('',[
             'article'=>$data
