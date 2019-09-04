@@ -34,7 +34,7 @@ class ArticleController extends Controller{
          $display_page = $model->page($controller,$action,$goods['pages'],$page,'',$cid);
          $this->assign('display_page',$display_page);
         
-        return $this->fetch('Article/index',[
+        return $this->fetch('article/index',[
             'goods'=>$goods['data'],
             'page'=>$page,
             'cid'=>$cid
@@ -116,7 +116,7 @@ class ArticleController extends Controller{
             $model  = new Article();
             $ret = $model->save_article($data);
             if($ret['status']==1){
-                $this->success('新增成功', 'Article/index');  
+                $this->success('新增成功', 'article/index');
                 exit;
             }else{
                 $this->error('新增失败');  
@@ -149,7 +149,7 @@ class ArticleController extends Controller{
             $ret = $model->save_article($data);
 
             if($ret['status']==1){
-                $this->success('修改成功', 'Article/index');  
+                $this->success('修改成功', 'article/index');
                 exit;
             }else{
                 $this->error('修改失败');  
