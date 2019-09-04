@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="{:url('Article/index')}">
+    <a class="navbar-brand" href="{:url('article/index')}">
         <img src="__STATIC__/home/icon/xiongmaoeasyicon.net.ico" width="30" height="30" class="d-inline-block align-top" />
         软经典
     </a>
@@ -14,7 +14,7 @@
                 {else/}
                     <li class="nav-item ">
                 {/if}
-                    <a class="nav-link" href="{:url('Article/index')}?cid={$vol.id}&page={$page}">
+                    <a class="nav-link" href="{:url('article/index')}?cid={$vol.id}&page={$page}">
                         <i class="{$vol.style}"></i>
                         {$vol.class_name}
                     </a>
@@ -27,7 +27,7 @@
             {else/}
                 <li class="nav-item" >
             {/if}
-                <a class="nav-link" href="{:url('Article/about')}">
+                <a class="nav-link" href="{:url('article/about')}">
                     <i class="fa fa-user"></i>
                     关于
                 </a>
@@ -41,7 +41,7 @@
             </div>
           </div>
         </form>-->
-        <form class="form-inline col-sm-2" method="get" style="padding:0;" action="{:url('Article/search')}">
+        <form class="form-inline col-sm-2" method="get" style="padding:0;" action="{:url('article/search')}">
             <input type="text" name="keyword" class="form-control form-control-sm"
                    style="width:100%; max-width:unset;"
                    placeholder="搜索一下"
