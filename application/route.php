@@ -24,7 +24,7 @@ use think\Route;
 
 //默认网站首页
 //Route::get('/','home/Article/index');
-
+//
 //Route::get('home/Article/index','home/Article/index');
 //Route::get('home/Article/about','home/Article/about');
 //Route::get('home/Article/detail','home/Article/detail');
