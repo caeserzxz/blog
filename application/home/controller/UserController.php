@@ -50,20 +50,20 @@ class UserController extends Controller{
 ,30250,30701,30724,30723,30158,30786,29898,29983,29892,29963,29958,29928,29899,29980,29897,29937,29941,29957,29946,29948,29983];
         $bb = array_unique($a);
 
-          dump($bb);die;
+        dump($bb);die;
         // file_get_contents('http://www.baidu.com');
-        $ch = curl_init();  
+        $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, "http://fuckgfw.zhouxuezhong.top");  
+        curl_setopt($ch, CURLOPT_URL, "http://fuckgfw.zhouxuezhong.top");
 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true) ; // 获取数据返回    
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true) ; // 获取数据返回
 
-        curl_setopt($ch, CURLOPT_BINARYTRANSFER, true) ; // 在启用 CURLOPT_RETURNTRANSFER 时候将获取数据返回    
+        curl_setopt($ch, CURLOPT_BINARYTRANSFER, true) ; // 在启用 CURLOPT_RETURNTRANSFER 时候将获取数据返回
 
-        $data = curl_exec($ch);  
+        $data = curl_exec($ch);
 
-        curl_close($ch);  
+        curl_close($ch);
 
-        return $data;  
+        return $data;
     }
 }
