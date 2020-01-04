@@ -1,8 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <script type="text/javascript" src="__STATIC__/home/js/google_translate/jquery.min.js"></script>
-    <script type="text/javascript" src="__STATIC__/home/js/google_translate/element.js"></script>
-    <script type="text/javascript" src="__STATIC__/home/js/google_translate/element_main.js"></script>
-    <script type="text/javascript" src="__STATIC__/home/js/google_translate/main_zh-CN.js"></script>
+
     <script type="text/javascript">
         // var googleUrl = 'google_translate/';
         var googleUrl = '__STATIC__/home/js/google_translate/';
@@ -13,10 +10,14 @@
                 layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
             }, 'google_translate_element');
         }
-        $(function () {
-            $.getScript(googleUrl + "element.js?cb=googleTranslateElementInit");
-        });
+        // $(function () {
+        //     $.getScript(googleUrl + "element.js?cb=googleTranslateElementInit");
+        // });
     </script>
+    <script type="text/javascript" src="__STATIC__/home/js/google_translate/jquery.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/home/js/google_translate/element.js"></script>
+    <script type="text/javascript" src="__STATIC__/home/js/google_translate/element_main.js"></script>
+    <script type="text/javascript" src="__STATIC__/home/js/google_translate/main_zh-CN.js"></script>
     <style>
         .goog-logo-link { display:none !important; }
         .goog-te-gadget { color: transparent !important; overflow: hidden;}
