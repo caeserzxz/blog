@@ -112,7 +112,7 @@ class Article  extends Model{
         
         if(isset($cid)){
           // $href = "{:url('".$controller."/".$action."')}?cid=".$cid;
-          $href = "/home/".$controller."/".$action."?cid=".$cid;
+          $href = "/".$controller."/".$action."?cid=".$cid;
         }
        
         for ($i=1; $i <($pages+1); $i++) { 
